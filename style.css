@@ -1,0 +1,105 @@
+
+.contact-info{
+  display: flex;
+}
+
+.contact {
+  flex-grow: 1;
+}
+
+.telef {
+  flex-grow: 1;
+}
+
+.horario {
+  display: flex;
+}
+
+.since{
+  flex-grow: 1;
+}
+
+.till{
+  flex-grow: 1;
+}
+
+.konectaBackground {
+	background-color: #032556;
+}
+
+.konectaText {
+	color: #032556;
+}
+
+/* label focus color */
+.input-field input:focus + label {
+   color: #032556 !important;
+ }
+ /* label underline focus color */
+.row .input-field input:focus {
+   border-bottom: 1px solid #032556 !important;
+   box-shadow: 0 1px 0 0 #032556 !important;
+ }
+
+.checkbox-konecta.filled-in[type="checkbox"] + label:after{
+    border: 2px solid #032556;
+    background: transparent;
+}
+.checkbox-konecta.filled-in[type="checkbox"]:checked + label:after{
+    background: #032556;
+}
+
+[type="radio"].with-gap:checked + label:before {
+border-radius: 50%;
+border: 2px solid #032556; }
+
+[type="radio"].with-gap:checked + label:after {
+border-radius: 50%;
+border: 2px solid #032556;
+background-color: #032556;
+}
+
+ul.dropdown-content.select-dropdown li span {
+    color: #032556; 
+}
+
+/*.test {
+	color: #032556 !important;
+} */
+
+.btn {
+	background-color: #032556;
+}
+
+.btn:hover {
+	background-color: #0f448e;
+}
+
+.btn:focus {
+	background-color: #032556;
+}
+
+#comentario {
+  display: flex;
+  flex-grow: 1;
+}
+
+#desvio {
+  display: flex;
+  flex-shrink: 1;
+}
+
+#bono {
+  display: flex;
+  flex-shrink: 1;
+}
+
+#reiterado {
+  display: flex;
+  flex-shrink: 1;
+}
+
+#horario {
+  display: flex;
+  flex-shrink: 1;
+}

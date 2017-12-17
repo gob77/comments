@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-
+hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="materialize.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="Font/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+  <div class="container">
+    <div class="contact-info">
+      <div class="row contact">
+        <div class="input-field inline">
+          <form action="" method="" accept-charset="utf-8">
+            <input id="contact" type="text" class="konectaBackground"/>
+            <label class="active">Contacto</label>
+          </form>
+        </div>
+      </div>
+
+      <div class="row telef">
+        <div class="input-field inline">
+        <input id="tel" type="tel" class="konectaBackground">
+        <label class="active">Telefono</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dropdown Trigger -->
+  <a class='dropdown-button btn konectaBackground' href='#' data-activates='desde' id="desdeBtn">Horario desde</a>
+
+  <!-- Dropdown Structure -->
+  <ul id='desde' class='dropdown-content'>
+        <li id="08:00"1>08:00</li>
+        <li id="08:30"3>08:30</li>
+        <li id="09:00"5>09:00</li>
+        <li id="09:30"7>09:30</li>
+        <li id="10:00"9>10:00</li>
+        <li id="10:30"11>10:30</li>
+        <li id="11:00"13>11:00</li>
+        <li id="11:30"15>11:30</li>
+        <li id="12:00"17>12:00</li>
+        <li id="12:30"19>12:30</li>
+        <li id="13:00"21>13:00</li>
+  </ul>
+
+
+    <!-- Dropdown Trigger -->
+  <a class='dropdown-button btn konectaBackground' href='#' data-activates='hasta' id="hastaBtn">Horario hasta</a>
+
+  <!-- Dropdown Structure -->
+  <ul id='hasta' class='dropdown-content'>
+        <li id="10:00"2>10:00</li>
+        <li id="10:30"4>10:30</li>
+        <li id="11:00"6>11:00</li>
+        <li id="11.30"8>11:30</li>
+        <li id="12:00"10>12:00</li>
+        <li id="12:30"12>12:30</li>
+        <li id="13:00"14>13:00</li>
+        <li id="13:30"16>13:30</li>
+        <li id="14:00"18>14:00</li>
+        <li id="14:30"20>14:30</li>
+        <li id="15:00"22>15:00</li>
+  </ul>
+
+    <div class="input-field inline col s6 l12 xl6">
+      <select name="sintomas" id="symptom">
+        <optgroup label="Telefonia">
+          <option value="Sin tono">Sin tono</option>
+          <option value="No llama">No llama</option>
+          <option value="No recibe llamadas">No recibe llamadas</option>
+          <option value="Ligado">Ligado</option>
+          <option value="Ruido">Ruido</option>
+          <option value="Cambiado con otro">Cambiado con otro</option>
+        </optgroup>
+        <optgroup label="ADSL">
+          <option value="Modem no sincroniza">No sincroniza</option>
+          <option value="No navega">No navega</option>
+          <option value="Modem averiado">Modem averiado</option>
+          <option value="Cortes intermitentes">Cortes intermitentes</option>
+        </optgroup>
+      </select>
+      <label for="symptom" class="test">Sintoma</label>
+    </div>
+
+    <br />
+
+
+    <h6>PDLA:</h6>
+  <form action="#">
+      <input class="with-gap red" type="radio" name="pdla" id="yes" checked="" />
+      <label for="yes">Pdla Ok</label> //
+      <input class="with-gap" type="radio" name="pdla" id="no" value="" />
+      <label for="no">Pdla no Ok</label> // 
+      <input class="with-gap" type="radio" name="pdla" id="nopos" value="" />
+      <label for="nopos">Pdla No Pos</label> //
+      <input class="with-gap" type="radio" name="pdla" id="noapl" value="" />
+      <label for="noapl">N/A</label> //
+    <div>
+      <p>
+        <h6>Bonos, Desvio y Reiterado:</h6>
+        <input type="checkbox" class="filled-in checkbox-konecta" id="desvio"/>
+        <label for="desvio">Desvio de llamadas</label> //
+        <input type="checkbox" class="filled-in checkbox-konecta" id="bono"/>
+        <label for="bono">Bono de datos</label> //
+        <input type="checkbox" class="filled-in checkbox-konecta" id="reiterado"/>
+        <label for="reiterado">Reiterado</label> //
+      </p>
+    </div>
+  </form>
+
+
+    <button type="button" class="btn waves-effect waves-light" id="btn">submit</button>
+    <hr />
+
+    <textarea class="browser-default" name="comentario" id="comment" rows="50" cols="160"></textarea>
+    <hr />
+    <h6>Registro de llamadas:</h6>
+    <table id="table" class="striped centered bordered">
+      <thead>
+        <th id="comentario">Comentario</th>
+        <th id="desvio">Desvio</th>
+        <th id="bono">Bono</th>
+        <th id="reiterado">Reiterado</th>
+        <th id="horario">Horario</th>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+    </div>
+      <script src="script.js"></script>
+  </body>
+</html>
